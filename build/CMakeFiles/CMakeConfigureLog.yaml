@@ -1,0 +1,360 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+      Build started 28-03-2026 12:09:32 PM.
+      
+      Project "E:\\gravity_sim\\build\\CMakeFiles\\3.31.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> E:\\gravity_sim\\build\\CMakeFiles\\3.31.0-rc1\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\gravity_sim\\build\\CMakeFiles\\3.31.0-rc1\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\gravity_sim\\build\\CMakeFiles\\3.31.0-rc1\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\gravity_sim\\build\\CMakeFiles\\3.31.0-rc1\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "E:\\gravity_sim\\build\\CMakeFiles\\3.31.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.17
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        E:/gravity_sim/build/CMakeFiles/3.31.0-rc1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-0w66o9"
+      binary: "E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-0w66o9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-0w66o9'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_152ba.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 28-03-2026 12:09:34 PM.
+        
+        Project "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w66o9\\cmTC_152ba.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_152ba.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w66o9\\Debug\\".
+          Creating directory "cmTC_152ba.dir\\Debug\\cmTC_152ba.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_152ba.dir\\Debug\\cmTC_152ba.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_152ba.dir\\Debug\\cmTC_152ba.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_152ba.dir\\Debug\\\\" /Fd"cmTC_152ba.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_152ba.dir\\Debug\\\\" /Fd"cmTC_152ba.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w66o9\\Debug\\cmTC_152ba.exe" /INCREMENTAL /ILK:"cmTC_152ba.dir\\Debug\\cmTC_152ba.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-0w66o9/Debug/cmTC_152ba.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-0w66o9/Debug/cmTC_152ba.lib" /MACHINE:X64  /machine:x64 cmTC_152ba.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_152ba.vcxproj -> E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w66o9\\Debug\\cmTC_152ba.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_152ba.dir\\Debug\\cmTC_152ba.tlog\\unsuccessfulbuild".
+          Touching "cmTC_152ba.dir\\Debug\\cmTC_152ba.tlog\\cmTC_152ba.lastbuildstate".
+        Done Building Project "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w66o9\\cmTC_152ba.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.51
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33145.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "CMakeLists.txt:15 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-bguo9i"
+      binary: "E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-bguo9i"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-bguo9i'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f698e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 28-03-2026 12:09:35 PM.
+        
+        Project "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bguo9i\\cmTC_f698e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f698e.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bguo9i\\Debug\\".
+          Creating directory "cmTC_f698e.dir\\Debug\\cmTC_f698e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f698e.dir\\Debug\\cmTC_f698e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f698e.dir\\Debug\\cmTC_f698e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_f698e.dir\\Debug\\\\" /Fd"cmTC_f698e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bguo9i\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_f698e.dir\\Debug\\\\" /Fd"cmTC_f698e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bguo9i\\src.cxx"
+          src.cxx
+        E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bguo9i\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bguo9i\\cmTC_f698e.vcxproj]
+        Done Building Project "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bguo9i\\cmTC_f698e.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bguo9i\\cmTC_f698e.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bguo9i\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bguo9i\\cmTC_f698e.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.34
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "CMakeLists.txt:15 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-827ym9"
+      binary: "E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-827ym9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-827ym9'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_350bf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 28-03-2026 12:09:36 PM.
+        
+        Project "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-827ym9\\cmTC_350bf.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_350bf.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-827ym9\\Debug\\".
+          Creating directory "cmTC_350bf.dir\\Debug\\cmTC_350bf.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_350bf.dir\\Debug\\cmTC_350bf.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_350bf.dir\\Debug\\cmTC_350bf.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_350bf.dir\\Debug\\\\" /Fd"cmTC_350bf.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-827ym9\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_350bf.dir\\Debug\\\\" /Fd"cmTC_350bf.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-827ym9\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-827ym9\\Debug\\cmTC_350bf.exe" /INCREMENTAL /ILK:"cmTC_350bf.dir\\Debug\\cmTC_350bf.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-827ym9/Debug/cmTC_350bf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-827ym9/Debug/cmTC_350bf.lib" /MACHINE:X64  /machine:x64 cmTC_350bf.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-827ym9\\cmTC_350bf.vcxproj]
+        Done Building Project "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-827ym9\\cmTC_350bf.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-827ym9\\cmTC_350bf.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-827ym9\\cmTC_350bf.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.41
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "CMakeLists.txt:15 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-hfle3l"
+      binary: "E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-hfle3l"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-hfle3l'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_83892.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+        Build started 28-03-2026 12:09:36 PM.
+        
+        Project "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfle3l\\cmTC_83892.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_83892.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfle3l\\Debug\\".
+          Creating directory "cmTC_83892.dir\\Debug\\cmTC_83892.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_83892.dir\\Debug\\cmTC_83892.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_83892.dir\\Debug\\cmTC_83892.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_83892.dir\\Debug\\\\" /Fd"cmTC_83892.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfle3l\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_83892.dir\\Debug\\\\" /Fd"cmTC_83892.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfle3l\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfle3l\\Debug\\cmTC_83892.exe" /INCREMENTAL /ILK:"cmTC_83892.dir\\Debug\\cmTC_83892.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-hfle3l/Debug/cmTC_83892.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/gravity_sim/build/CMakeFiles/CMakeScratch/TryCompile-hfle3l/Debug/cmTC_83892.lib" /MACHINE:X64  /machine:x64 cmTC_83892.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfle3l\\cmTC_83892.vcxproj]
+        Done Building Project "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfle3l\\cmTC_83892.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfle3l\\cmTC_83892.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [E:\\gravity_sim\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hfle3l\\cmTC_83892.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.41
+        
+      exitCode: 1
+...
