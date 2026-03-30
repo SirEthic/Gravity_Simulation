@@ -1,6 +1,6 @@
 # 
 
-# ```markdown
+# ```
 
 # \# 🌌 3D Solar System Gravity Simulation
 
