@@ -303,7 +303,7 @@ public:
         }
     }
 
-    void step() {
+    void step(float timeScale = 1.0f) {
         if (paused) return;
         int n = (int)bodies.size();
         std::vector<glm::vec3> acc(n, glm::vec3(0.f));
@@ -319,8 +319,9 @@ public:
         }
         static int tick = 0;
         for (int i = 0; i < n; i++) {
-            bodies[i].vel += acc[i] * DT;
-            bodies[i].pos += bodies[i].vel * DT;
+            float scaledDT = DT * timeScale;
+            bodies[i].vel += acc[i] * scaledDT;
+            bodies[i].pos += bodies[i].vel * scaledDT;
             if (bodies[i].showTrail && showTrails && tick%4==0)
                 bodies[i].pushTrail(bodies[i].pos);
         }
@@ -376,6 +377,7 @@ static SolarSim g_sim;
 static double   g_lx=0, g_ly=0;
 static bool     g_drag=false;
 static int      g_follow=-1;
+static float    g_timeScale = 1.0f;
 
 // ─── Saturn ring mesh (XZ plane, multi-band) ─────────────────────────────────
 static std::vector<float> buildRing(const glm::vec3& cen,
@@ -452,6 +454,13 @@ static void onKey(GLFWwindow* w, int key, int, int action, int) {
         }
         g_follow=-1;
     }
+
+      // ── Speed controls ──────────────────────────────────────────────
+    if (key==GLFW_KEY_EQUAL || key==GLFW_KEY_KP_ADD)      // + or numpad +
+        g_timeScale = std::min(g_timeScale * 2.0f, 64.0f);
+    if (key==GLFW_KEY_MINUS || key==GLFW_KEY_KP_SUBTRACT) // - or numpad -
+        g_timeScale = std::max(g_timeScale * 0.5f, 0.0625f);
+    // ────────────────────────────────────────────────────────────────
 }
 static void onBtn(GLFWwindow*, int btn, int action, int) {
     if (btn==GLFW_MOUSE_BUTTON_LEFT) g_drag=(action==GLFW_PRESS);
@@ -556,7 +565,7 @@ int main() {
         fps=fps*0.94f+(1.f/std::max(dt,0.001f))*0.06f;
 
         int substeps=std::min(8,std::max(1,(int)(dt/DT)));
-        for (int s=0;s<substeps;s++) g_sim.step();
+        for (int s=0;s<substeps;s++) g_sim.step(g_timeScale);
 
         // Follow target
         if (g_follow>=0 && g_follow<(int)g_sim.bodies.size())

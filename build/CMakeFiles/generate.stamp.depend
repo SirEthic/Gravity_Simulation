@@ -47,7 +47,7 @@ C:/vcpkg/installed/x64-windows/share/glm/glmConfig-release.cmake
 C:/vcpkg/installed/x64-windows/share/glm/glmConfig.cmake
 C:/vcpkg/installed/x64-windows/share/glm/glmConfigVersion.cmake
 C:/vcpkg/scripts/buildsystems/vcpkg.cmake
-E:/gravity_sim/CMakeLists.txt
-E:/gravity_sim/build/CMakeFiles/3.31.0-rc1/CMakeCXXCompiler.cmake
-E:/gravity_sim/build/CMakeFiles/3.31.0-rc1/CMakeRCCompiler.cmake
-E:/gravity_sim/build/CMakeFiles/3.31.0-rc1/CMakeSystem.cmake
+E:/gravity_simulation/CMakeLists.txt
+E:/gravity_simulation/build/CMakeFiles/3.31.0-rc1/CMakeCXXCompiler.cmake
+E:/gravity_simulation/build/CMakeFiles/3.31.0-rc1/CMakeRCCompiler.cmake
+E:/gravity_simulation/build/CMakeFiles/3.31.0-rc1/CMakeSystem.cmake

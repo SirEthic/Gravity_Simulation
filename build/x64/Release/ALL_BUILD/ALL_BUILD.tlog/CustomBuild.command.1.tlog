@@ -1,6 +1,6 @@
-^E:\GRAVITY_SIM\CMAKELISTS.TXT
+^E:\GRAVITY_SIMULATION\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/gravity_sim -BE:/gravity_sim/build --check-stamp-file E:/gravity_sim/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/gravity_simulation -BE:/gravity_simulation/build --check-stamp-file E:/gravity_simulation/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

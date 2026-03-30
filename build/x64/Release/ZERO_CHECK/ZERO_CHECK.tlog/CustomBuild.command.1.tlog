@@ -1,6 +1,6 @@
-^E:\GRAVITY_SIM\BUILD\CMAKEFILES\67DC366742E1DFBEA80E4732A359AC28\GENERATE.STAMP.RULE
+^E:\GRAVITY_SIMULATION\BUILD\CMAKEFILES\43097480A51AF21EE828D4528AFBA3D8\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/gravity_sim -BE:/gravity_sim/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/gravity_sim/build/GravitySim.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/gravity_simulation -BE:/gravity_simulation/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/gravity_simulation/build/GravitySim.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

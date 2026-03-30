@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\gravity_sim\build\x64\Release\ZERO_CHECK</FullPath>
+      <FullPath>E:\gravity_simulation\build\x64\Release\ZERO_CHECK</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

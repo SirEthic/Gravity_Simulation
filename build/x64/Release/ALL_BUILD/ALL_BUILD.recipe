@@ -2,13 +2,13 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\gravity_sim\build\x64\Release\ZERO_CHECK</FullPath>
+      <FullPath>E:\gravity_simulation\build\x64\Release\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>E:\gravity_sim\build\Release\gravity_sim.exe</FullPath>
+      <FullPath>E:\gravity_simulation\build\Release\gravity_sim.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>E:\gravity_sim\build\x64\Release\ALL_BUILD</FullPath>
+      <FullPath>E:\gravity_simulation\build\x64\Release\ALL_BUILD</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
