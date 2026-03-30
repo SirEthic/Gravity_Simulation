@@ -1,128 +1,204 @@
-# 3D Gravity Simulation
+# 
 
-A real-time N-body gravitational simulation rendered with OpenGL 3.3.  
-Particles attract each other via Newton's law of gravitation with a
-softening term to prevent singularities.
+# ```markdown
 
----
+# \# 🌌 3D Solar System Gravity Simulation
 
-## Features
+# 
 
-| Feature | Detail |
-|---|---|
-| **N-body physics** | Direct O(n²) summation with softened gravity |
-| **Leapfrog integrator** | Symplectic, energy-conserving |
-| **Two presets** | Random cluster  &  Spiral galaxy |
-| **Particle trails** | Ring-buffer trail renderer |
-| **Speed-based colouring** | Blue (slow) → Cyan → Yellow → White (fast) |
-| **Orbit camera** | Drag + scroll |
-| **Live controls** | Pause, reset, add/remove bodies at runtime |
+# A real-time N-body gravity simulation of our Solar System rendered in OpenGL.
 
----
+# All planetary motion is driven by gravitational physics — no hardcoded orbits.
 
-## Controls
+# 
 
-| Key / Mouse | Action |
-|---|---|
-| **Left Drag** | Orbit camera |
-| **Scroll Wheel** | Zoom in / out |
-| **Space** | Pause / Resume |
-| **R** | Reset simulation |
-| **G** | Toggle Galaxy / Random preset |
-| **T** | Toggle particle trails |
-| **+ / =** | Add 50 particles |
-| **-** | Remove 50 particles |
-| **ESC** | Quit |
+# !\[Solar System](screenshot.png)
 
----
+# 
 
-## Dependencies
+# \## Features
 
-| Library | Purpose |
-|---|---|
-| [GLFW 3](https://www.glfw.org/) | Window & input |
-| [GLEW](http://glew.sourceforge.net/) | OpenGL extension loading |
-| [GLM](https://github.com/g-truc/glm) | Math (vectors, matrices) |
-| CMake ≥ 3.14 | Build system |
+# 
 
----
+# \- \*\*N-body gravitational simulation\*\* — every body attracts every other body
 
-## Building
+# \- \*\*Sun + 8 planets + Pluto + Moon + Halley's Comet\*\*
 
-### Ubuntu / Debian
+# \- \*\*180 asteroids\*\* forming a procedurally generated asteroid belt
 
-```bash
-sudo apt update
-sudo apt install -y \
-    build-essential cmake \
-    libglfw3-dev libglew-dev libglm-dev \
-    libgl-dev
-```
+# \- \*\*Saturn's rings\*\* rendered as translucent multi-band geometry
 
-```bash
-mkdir build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
-cmake --build . -j$(nproc)
-./gravity_sim
-```
+# \- \*\*Phong-shaded planet spheres\*\* with day/night terminators and atmosphere rims
 
-### macOS (Homebrew)
+# \- \*\*Emissive Sun\*\* with procedural corona glow
 
-```bash
-brew install cmake glfw glew glm
-mkdir build && cd build
-cmake ..
-cmake --build .
-./gravity_sim
-```
+# \- \*\*Orbital trails\*\* with fade-out effect
 
-### Windows (vcpkg + Visual Studio / Ninja)
+# \- \*\*2500 background stars\*\*
 
-```powershell
-vcpkg install glfw3 glew glm
-mkdir build; cd build
-cmake .. -DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake
-cmake --build . --config Release
-.\Release\gravity_sim.exe
-```
+# \- \*\*Interactive camera\*\* — orbit, zoom, and follow individual planets
 
----
+# \- \*\*Orbital inclinations\*\* for realistic 3D trajectories
 
-## Launch flags
+# 
 
-```bash
-./gravity_sim --galaxy   # start in galaxy preset immediately
-```
+# \## Controls
 
----
+# 
 
-## Tweaking the simulation
+# | Key / Input     | Action                          |
 
-Open `gravity_sim.cpp` and adjust the constants near the top:
+# |-----------------|---------------------------------|
 
-```cpp
-static const int   NUM_PARTICLES = 600;    // initial body count
-static const float G             = 0.0005f; // gravitational constant
-static const float SOFTENING     = 0.15f;  // prevents singularity
-static const float DT            = 0.004f; // time-step (smaller = more accurate)
-static const int   TRAIL_LENGTH  = 60;     // trail history per particle
-```
+# | Left Drag       | Orbit camera                   |
 
-Increasing `NUM_PARTICLES` beyond ~1000 will slow down on CPU because the
-algorithm is O(n²).  For larger counts, consider implementing a Barnes-Hut
-tree (O(n log n)) — a great next step!
+# | Scroll           | Zoom in / out                  |
 
----
+# | Space            | Pause / Resume simulation      |
 
-## Architecture
+# | R                | Reset simulation               |
 
-```
-main()
- ├─ GLFW window + callbacks
- ├─ GravitySim::step()          ← physics (CPU, direct summation)
- ├─ Grid draw                   ← reference plane
- ├─ Trail draw (GL_LINES)       ← position history
- └─ Particle draw (GL_POINTS)   ← point sprites with custom shaders
-```
+# | T                | Toggle orbital trails          |
 
-All rendering uses modern OpenGL (VAOs, VBOs, GLSL 330 shaders).
+# | F                | Cycle follow target (planets)  |
+
+# | ESC              | Quit                           |
+
+# 
+
+# \## Build
+
+# 
+
+# \### Requirements
+
+# 
+
+# \- C++11 or later
+
+# \- OpenGL 3.3+
+
+# \- \[GLFW](https://www.glfw.org/)
+
+# \- \[GLEW](http://glew.sourceforge.net/)
+
+# \- \[GLM](https://github.com/g-truc/glm)
+
+# 
+
+# \### Linux
+
+# 
+
+# ```bash
+
+# g++ -std=c++11 -o solar\_system main.cpp -lGL -lGLEW -lglfw -lm
+
+# ./solar\_system
+
+# ```
+
+# 
+
+# \### Windows (MinGW)
+
+# 
+
+# ```bash
+
+# g++ -std=c++11 -o solar\_system.exe main.cpp -lglew32 -lglfw3 -lopengl32 -lgdi32
+
+# solar\_system.exe
+
+# ```
+
+# 
+
+# \### macOS
+
+# 
+
+# ```bash
+
+# g++ -std=c++11 -o solar\_system main.cpp -lGLEW -lglfw -framework OpenGL
+
+# ./solar\_system
+
+# ```
+
+# 
+
+# \## How It Works
+
+# 
+
+# The simulation uses \*\*Newtonian gravity\*\* with the equation:
+
+# 
+
+# ```
+
+# F = G \* m1 \* m2 / (r² + ε²)
+
+# ```
+
+# 
+
+# where `ε` is a softening factor to prevent singularities at close distances.
+
+# 
+
+# Each frame:
+
+# 1\. Compute gravitational acceleration between all pairs of bodies
+
+# 2\. Update velocities and positions using symplectic Euler integration
+
+# 3\. Render each body as a point sprite with per-pixel sphere shading
+
+# 
+
+# Planets are initialized with calculated circular/inclined orbital velocities
+
+# so they begin in stable orbits. The Moon orbits Earth, and Halley's Comet
+
+# follows a highly eccentric inclined trajectory.
+
+# 
+
+# \## Project Structure
+
+# 
+
+# ```
+
+# ├── main.cpp          # Complete simulation + rendering (single file)
+
+# └── README.md
+
+# ```
+
+# 
+
+# \## License
+
+# 
+
+# MIT License — free to use, modify, and distribute.
+
+# ```
+
+# 
+
+# \## Topics / Tags (for GitHub repo settings)
+
+# 
+
+# ```
+
+# opengl simulation physics solar-system gravity n-body cpp glfw
+
+# space planets astronomy 3d real-time
+
+# ```
+
